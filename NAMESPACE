@@ -1,3 +1,2 @@
-exportPattern("^[[:alpha:]]+")
-
+export(DeconRNASeq, condplot, decon.bootstrap, multiplot, rmse)
 importFrom(limSolve, lsei)
