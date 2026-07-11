@@ -29,10 +29,9 @@
 }
 
 \examples{
-\donttest{
+library(DeconRNASeq)
 data(multi_tissue)
 datasets <- x.data[, 2:11]
 signatures <- x.signature.filtered.optimal[, 2:6]
 decon.bootstrap(datasets, signatures, n.sig = 10, n.iter = 5)
-}
 }
