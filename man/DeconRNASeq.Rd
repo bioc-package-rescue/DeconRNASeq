@@ -41,16 +41,12 @@ DeconRNASeq(datasets, signatures, proportions = NULL, checksig = FALSE, known.pr
 \keyword{DeconSeq}
 
 \examples{
-## Please refer our demo
-##source("DeconRNASeq.R")
-### multi_tissue: expression profiles for 10 mixing samples from multiple tissues 
-#data(multi_tissue.rda)  
-   
-#datasets <- x.data[,2:11]
-#signatures <- x.signature.filtered.optimal[,2:6]
-#proportions <- fraction
+library(DeconRNASeq)
+data(multi_tissue)
+datasets <- x.data[, 2:11]
+signatures <- x.signature.filtered.optimal[, 2:6]
+proportions <- fraction
 
-#DeconRNASeq(datasets, signatures, proportions, checksig=FALSE, known.prop = TRUE, use.scale = TRUE)
-#
+DeconRNASeq(datasets, signatures, proportions, checksig=FALSE,
+            known.prop = TRUE, use.scale = TRUE, fig = FALSE)
 }
-

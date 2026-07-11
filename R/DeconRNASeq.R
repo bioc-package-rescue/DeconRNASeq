@@ -126,7 +126,7 @@ DeconRNASeq = function(datasets, signatures, proportions=NULL, checksig=FALSE, k
 
    x.proportions <- x.proportions[colnames(x.data),]
 
-   parray <- ggplot()
+   parray <- list()
    length(parray) <- ncol(out.all)
    
    for (i in 1:ncol(out.all)){

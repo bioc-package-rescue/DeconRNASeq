@@ -1,12 +1,13 @@
 Package: DeconRNASeq
 Type: Package
 Title: Deconvolution of Heterogeneous Tissue Samples for mRNA-Seq data
-Version: 1.55.0
+Version: 1.55.3
 Date: 2013-01-22
-Author: Ting Gong <tinggong@gmail.com> Joseph D. Szustakowski
-        <joseph.szustakowski@novartis.com>
+Authors@R: c(
+    person("Ting", "Gong", email = "tinggong@gmail.com", role = c("aut", "cre")),
+    person("Joseph D.", "Szustakowski", email = "joseph.szustakowski@novartis.com", role = "aut")
+  )
 Depends: R (>= 2.14.0), limSolve, pcaMethods, ggplot2, grid
-Maintainer: Ting Gong <tinggong@gmail.com>
 Description: DeconSeq is an R package for deconvolution of
         heterogeneous tissues based on mRNA-Seq data. It modeled
         expression levels from heterogeneous cell populations in
