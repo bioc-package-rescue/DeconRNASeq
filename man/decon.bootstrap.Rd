@@ -27,3 +27,12 @@
     Ting Gong \email{tinggong@gmail.com}
     Joseph D. Szustakowski \email{joseph.szustakowski@novartis.com} 
 }
+
+\examples{
+\donttest{
+data(multi_tissue)
+datasets <- x.data[, 2:11]
+signatures <- x.signature.filtered.optimal[, 2:6]
+decon.bootstrap(datasets, signatures, n.sig = 10, n.iter = 5)
+}
+}

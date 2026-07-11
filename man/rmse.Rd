@@ -25,3 +25,9 @@
     Ting Gong \email{tinggong@gmail.com}
     Joseph D. Szustakowski \email{joseph.szustakowski@novartis.com} 
 }
+
+\examples{
+x <- c(0.1, 0.2, 0.7)
+y <- c(0.12, 0.18, 0.7)
+rmse(x, y)
+}
