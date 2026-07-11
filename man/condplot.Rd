@@ -30,9 +30,9 @@ library(DeconRNASeq)
 ## toy data example:
 
 
-      step <- seq(20,1000, by=20) #every 20 genes
+      step <- seq(20,100, by=20) #every 20 genes
       ## cell type-specific gene expression matrix:
-      x.signature <- matrix(rexp(2000),ncol=2)
+      x.signature <- matrix(rexp(200),ncol=2)
       sig.cond <- sapply(step, function(x) kappa(scale(x.signature[1:x,]))) 
-      function (step, cond)
+      condplot(step, sig.cond)
 }

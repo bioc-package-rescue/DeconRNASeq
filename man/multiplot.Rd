@@ -28,24 +28,9 @@ multiplot(..., plotlist = NULL, cols)
         Joseph D. Szustakowski \email{joseph.szustakowski@novartis.com}
 }
 \examples{
-
-## The function is currently defined as
-function (..., plotlist = NULL, cols) 
-{
-    pdf("scatterplots.pdf")
-    require(grid)
-    plots <- c(list(...), plotlist)
-    numPlots = length(plots)
-    plotCols = cols
-    plotRows = ceiling(numPlots/plotCols)
-    grid.newpage()
-    pushViewport(viewport(layout = grid.layout(plotRows, plotCols)))
-    vplayout <- function(x, y) viewport(layout.pos.row = x, layout.pos.col = y)
-    for (i in 1:numPlots) {
-        curRow = ceiling(i/plotCols)
-        curCol = (i - 1)\%\%plotCols + 1
-        print(plots[[i]], vp = vplayout(curRow, curCol))
-    }
-    dev.off()
-  }
+library(ggplot2)
+p1 <- ggplot(data.frame(x = 1:10, y = 1:10), aes(x, y)) + geom_point()
+p2 <- ggplot(data.frame(x = 1:10, y = 1:10), aes(x, y)) + geom_point()
+multiplot(p1, p2, cols = 2)
+if (file.exists("scatterplots.pdf")) unlink("scatterplots.pdf")
 }
