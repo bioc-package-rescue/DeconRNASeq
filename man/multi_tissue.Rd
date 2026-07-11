@@ -15,7 +15,6 @@
   
   5)fraction: a data frame providing the fractions from 5 tissues in the mixing samples
 }
-\usage{multi_tissue}
 \format{
  A list
   1) a matrix with all the genes' expression in the mixing samples: the first two columns are corresponding to the RefSeq accession numbers and gene symbols

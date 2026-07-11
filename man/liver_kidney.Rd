@@ -11,7 +11,6 @@
 
   3) signatures: a data frame providing the expression values from pure liver and kidney samples
 }
-\usage{liver_kidney}
 \format{
  A list
   1) a data frame with 31979 genes' expression on the 7 mixing samples: reads.1, reads.2, reads.3, reads.4, reads.5, reads.6, reads.7
